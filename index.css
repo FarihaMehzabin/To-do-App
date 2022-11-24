@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  line-height: 1.5;
+}
+
+header {
+  padding: 1rem;
+  font-weight: 700;
+  background: url("/images/bg-desktop-light.jpg");
+}
+
+nav {
+  padding: 2rem;
+  padding-bottom: 8rem;
+  color: white;
+  /* width: 50%; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h1 {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.change-modes {
+}
+
+main {
+    background-color: rgb(208, 206, 206);
+  padding: 2rem 3rem;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.new-todo-div{
+   position: relative;
+  top: -8rem;
+}
+
+.new-todo-div input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.list-of-todos{
+    margin-top: 1rem;
+}
+
+.todo-info{
+    background-color: white;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid gray;
+    /* padding: 1rem; */
+}
+
+.todo-info>*{
+    padding: 1rem 2rem;
+}
+
+footer{
+    background-color: rgb(209, 206, 206);
+    padding: 4rem;
+}
