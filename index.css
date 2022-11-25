@@ -4,67 +4,93 @@
   line-height: 1.5;
 }
 
-header {
-  padding: 1rem;
-  font-weight: 700;
-  background: url("/images/bg-desktop-light.jpg");
+body{
+  width: 100%;
 }
 
-nav {
+header {
   padding: 2rem;
   padding-bottom: 8rem;
-  color: white;
-  /* width: 50%; */
+  font-weight: 700;
+  background: url("/images/bg-desktop-light.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  /* background-color: aquamarine; */
 }
 
-nav h1 {
+nav{
+   display: flex;
+   justify-content: space-between;
+   color: white;
+   max-width: 700px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+nav h1{
   text-transform: uppercase;
-  letter-spacing: 1rem;
-}
-
-.change-modes {
-}
-
-main {
-    background-color: rgb(208, 206, 206);
-  padding: 2rem 3rem;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  letter-spacing: .5em;
 }
 
 .new-todo-div{
-   position: relative;
-  top: -8rem;
+  padding: 2rem;
+  position: relative;
+  top: -120px;
 }
 
-.new-todo-div input{
-    width: 100%;
-    padding: 1rem;
-    border-radius: 10px;
-    border: none;
-}
-
-.list-of-todos{
-    margin-top: 1rem;
+.new-todo-div>input,.todo-info{
+  width: 100%;
+  padding: 1rem;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .todo-info{
-    background-color: white;
-    color: gray;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 0 0 10px 10px;
-    border-top: 1px solid gray;
-    /* padding: 1rem; */
-}
-
-.todo-info>*{
-    padding: 1rem 2rem;
+  color: gray;
+  margin-top: 1rem;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  box-shadow: 1px 1px 10px gray;
 }
 
 footer{
-    background-color: rgb(209, 206, 206);
-    padding: 4rem;
+  padding: 2rem;
+  position: fixed;
+  width: 100%;
+  top: 80vh;
+  text-align: center;
 }
+
+.todo-track{
+  
+  color: gray;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px gray;
+  border-radius: 10px;
+}
+
+footer>h4{
+  margin-top: 3rem;
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.todo-track>h4{
+  margin-left: 1rem;
+}
+
+
+
